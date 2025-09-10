@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="app">
+    <meta name="twitter:description" content="O Cadastro Nacional dos Advogados (CNA) é uma ferramenta que possibilita a consulta dos advogados e estagiários inscritos no quadro da OAB.">
+    <meta name="twitter:app:id:iphone" content="723867664">
+    <meta name="twitter:app:id:ipad" content="723867664">
+    <meta name="twitter:app:id:googleplay" content="br.org.oab.cna">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>CNA - Cadastro Nacional dos Advogados</title>
+    <!-- Metadados -->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700"
+          rel="stylesheet" />
+    <link href="/ViewStyles/Shared/resets.css" rel="stylesheet" type="text/css" />
+    <link href="/ViewStyles/Shared/_Layout.css?v=837fc4f5dace9a56a30cfa6460540aa4" rel="stylesheet" type="text/css" />
+    <link href="/ViewStyles/Shared/stylesheetFont.css" rel="stylesheet" type="text/css" />
+    <link href="/Scripts/jnotify/jnotify.css" rel="stylesheet" type="text/css" />
+    <link href="/Scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="/ViewStyles/Home/Index.css?v=62a5b381de837b996677bfaae9cd1ff4" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div id="top">
+        <div id="topContent">
+            <div id="logo">
+                <a href=""></a>
+            </div>
+            <div id="sickerOAB">
+                <a href="https://www.oab.org.br" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <div id="bodyContent">
+        
+<div id="colLeft">
+    <h2 class="newTitle">
+        Consulta Online
+    </h2>
+    <br />
+    <p>
+        O Cadastro Nacional dos Advogados (CNA) é mantido pelo Conselho Federal da OAB,
+        que exerce a função de fiel repositório do cadastro de todos os advogados do Brasil.<br />
+        <br />
+        Para realizar a consulta, preencha corretamente os campos abaixo e clique em pesquisar.
+    </p>
+    <br />
+    <div class="alert alert-error hide" style="margin-top: 5px;">
+    </div>
+<form action="/Home/Search" method="post"><input name="__RequestVerificationToken" type="hidden" value="CcpdsZPHlrbmP-RVBDmIjYWDKJQBnNc9b78EOTXqRzrHzN3si3htL2lCMusur70Mk5Z1V4dvNmupvw-Aa5kUhA-84MFqcGV6wBjzWHji4Ww1" /><input data-val="true" data-val-required="The IsMobile field is required." id="IsMobile" name="IsMobile" type="hidden" value="" />        <div class="styleForm">
+            <div class="holdingFormSearch">
+                <div class="divField">
+                    <label style="font-weight: bold" for="txtName">
+                        Nome
+                    </label>
+                    <br />
+                    <input id="txtName" name="NomeAdvo" tabindex="1" type="text" value="" />
+                </div>
+                <div class="divField">
+                    <label style="font-weight: bold" for="txtInsc">
+                        Nº da inscrição
+                    </label>
+                    <br />
+                    <input id="txtInsc" maxlength="10" name="Insc" tabindex="2" type="text" value="" />
+                </div>
+                <div class="divField">
+                    <label style="font-weight: bold" for="cmbSeccional">
+                        Seccional
+                    </label>
+                    <br />
+                    <select id="cmbSeccional" name="Uf" tabindex="3"><option value="AC">Conselho Seccional - Acre</option>
+<option value="AL">Conselho Seccional - Alagoas</option>
+<option value="AP">Conselho Seccional - Amap&#225;</option>
+<option value="AM">Conselho Seccional - Amazonas</option>
+<option value="BA">Conselho Seccional - Bahia</option>
+<option value="CE">Conselho Seccional - Cear&#225;</option>
+<option value="DF">Conselho Seccional - Distrito Federal</option>
+<option value="ES">Conselho Seccional - Espirito Santo</option>
+<option value="GO">Conselho Seccional - Goi&#225;s</option>
+<option value="MA">Conselho Seccional - Maranh&#227;o</option>
+<option value="MT">Conselho Seccional - Mato Grosso</option>
+<option value="MS">Conselho Seccional - Mato Grosso do Sul</option>
+<option value="MG">Conselho Seccional - Minas Gerais</option>
+<option value="PA">Conselho Seccional - Par&#225;</option>
+<option value="PB">Conselho Seccional - Para&#237;ba</option>
+<option value="PR">Conselho Seccional - Paran&#225;</option>
+<option value="PE">Conselho Seccional - Pernambuco</option>
+<option value="PI">Conselho Seccional - Piau&#237;</option>
+<option value="RJ">Conselho Seccional - Rio de Janeiro</option>
+<option value="RN">Conselho Seccional - Rio Grande do Norte</option>
+<option value="RS">Conselho Seccional - Rio Grande do Sul</option>
+<option value="RO">Conselho Seccional - Rond&#244;nia</option>
+<option value="RR">Conselho Seccional - Roraima</option>
+<option value="SC">Conselho Seccional - Santa Catarina</option>
+<option value="SP">Conselho Seccional - S&#227;o Paulo</option>
+<option value="SE">Conselho Seccional - Sergipe</option>
+<option value="TO">Conselho Seccional - Tocantins</option>
+</select>
+                </div>
+                <div class="divField">
+                    <label style="font-weight: bold" for="cmbTipoInsc">
+                        Tipo de inscrição
+                    </label>
+                    <br />
+                    <select data-val="true" data-val-number="The field TipoInsc must be a number." id="cmbTipoInsc" name="TipoInsc" tabindex="4"><option value="1">Advogado</option>
+<option value="2">Estagi&#225;rio</option>
+<option value="3">Suplementar</option>
+</select>
+                </div>
+                <div class="divField" style="display: none;">
+                    <label style="font-weight: bold">
+                        Clique na caixa "Não sou um robô"
+                    </label>
+                    <br />
+                </div>
+                <div class="divField divFieldRight" style="padding-right: 4px;">
+                    
+                    <button class="button white"
+                            id="btnFind"
+                            tabindex="6"
+                            type="button">
+                        Pesquisar
+                    </button>
+                </div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+</form>    <div id="resultContent" class="hide">
+        <h2>
+            RESULTADO
+        </h2>
+        <div id="textResult">
+        </div>
+        <div id="divResult">
+        </div>
+    </div>
+</div>
+<div id="colRight">
+    <div class="boxTitle boxTitleBlue">
+        ÚLTIMAS NOTÍCIAS
+    </div>
+    <div class="boxTitleBlueContent">
+                <div class="news">
+                    <span class="date"><a target="_blank" href="http://www.oab.org.br/noticia/63395/oab-em-luto-pelo-procurador-silvio-avelino-pires-britto-junior">08 setembro 2025</a></span>
+                    <span class="newsTitle"><a target="_blank" href="http://www.oab.org.br/noticia/63395/oab-em-luto-pelo-procurador-silvio-avelino-pires-britto-junior">OAB em luto pelo procurador S&#237;lvio Avelino Pires Britto J&#250;nior</a></span>
+                </div>
+                <div class="news">
+                    <span class="date"><a target="_blank" href="http://www.oab.org.br/noticia/63394/oab-nacional-reforca-a-cooperacao-internacional-e-a-defesa-do-estado-de-direito-durante-convencao-na-india">08 setembro 2025</a></span>
+                    <span class="newsTitle"><a target="_blank" href="http://www.oab.org.br/noticia/63394/oab-nacional-reforca-a-cooperacao-internacional-e-a-defesa-do-estado-de-direito-durante-convencao-na-india">OAB Nacional refor&#231;a a coopera&#231;&#227;o internacional e a defesa do Estado de Direito durante conven&#231;&#227;o na &#205;ndia</a></span>
+                </div>
+                <div class="news">
+                    <span class="date"><a target="_blank" href="http://www.oab.org.br/noticia/63393/cnj-garante-independencia-dos-honorarios-advocaticios-em-acordos-diretos-com-o-governo">06 setembro 2025</a></span>
+                    <span class="newsTitle"><a target="_blank" href="http://www.oab.org.br/noticia/63393/cnj-garante-independencia-dos-honorarios-advocaticios-em-acordos-diretos-com-o-governo">CNJ garante independ&#234;ncia dos honor&#225;rios advocat&#237;cios em acordos diretos com o governo</a></span>
+                </div>
+                <div class="news">
+                    <span class="date"><a target="_blank" href="http://www.oab.org.br/noticia/63392/oab-promove-encontro-de-presidentes-de-comissoes-de-direito-desportivo-durante-a-confut-sudamericana">05 setembro 2025</a></span>
+                    <span class="newsTitle"><a target="_blank" href="http://www.oab.org.br/noticia/63392/oab-promove-encontro-de-presidentes-de-comissoes-de-direito-desportivo-durante-a-confut-sudamericana">OAB promove encontro de presidentes de Comiss&#245;es de Direito Desportivo durante a Confut Sudamericana</a></span>
+                </div>
+                <div class="news">
+                    <span class="date"><a target="_blank" href="http://www.oab.org.br/noticia/63391/programa-portas-abertas-aproxima-as-subsecoes-do-conselho-federal">05 setembro 2025</a></span>
+                    <span class="newsTitle"><a target="_blank" href="http://www.oab.org.br/noticia/63391/programa-portas-abertas-aproxima-as-subsecoes-do-conselho-federal">Programa Portas Abertas aproxima as subse&#231;&#245;es do Conselho Federal</a></span>
+                </div>
+    </div>
+
+    <div class="boxText boxTextRed">
+        IMPORTANTE !
+    </div>
+    <div class="boxTextContent">
+        <p>
+            O teor desta consulta é meramente informativo, não valendo como certidão. Somente
+            inscritos recadastrados estão disponíveis.<br />
+            <br />
+            <span style="color: #E0040B;">
+                As informações aqui disponibilizadas são de responsabilidade
+                das seccionais.
+                <br />
+                <br />
+                Para atualizar seu cadastro, procure sua Seccional.
+            </span>
+        </p>
+    </div>
+    <div class="boxText boxTextBlue">
+        SAIBA MAIS
+    </div>
+    <div class="boxTextContent">
+        <p>
+            <a target="_blank" href="https://www.oab.org.br/leisnormas/legislacao/provimentos/95-2000">Provimento 95/2000</a><br />
+            Dispõe sobre o Cadastro Nacional dos Advogados.
+            <br />
+            <br />
+            <a target="_blank" href="http://www.oab.org.br/leisnormas/legislacao/provimentos/103-2004">Provimento 103/2004</a><br />
+            Dispõe sobre o Cadastro Nacional dos Advogados, e estabelece critérios para utilização
+            e acesso ao banco de dados.
+            <br />
+            <br />
+            <a target="_blank" href="http://www.oab.org.br/leisnormas/legislacao/provimentos/131-2009">Provimento 131/2009</a><br />
+            Dispõe sobre o Cadastro Nacional dos Advogados.
+        </p>
+    </div>
+    <div class="cnaMobile">
+        <a href="https://itunes.apple.com/br/app/cna-cadastro-nacional-dos/id723867664?mt=8" target="_blank">
+            <img src="/Content/Images/app_store.png">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.org.oab.cna" target="_blank">
+            <img alt="Get it on Google Play" src="/Content/Images/googleplay_store.png">
+        </a>
+    </div>
+</div>
+
+<input id="hdBackUrl" name="hdBackUrl" type="hidden" value="" />
+
+<script type="text/x-jsrender" id="tmplRowResult">
+    <div class="row">
+        <div class="rowNumber">
+            <span class="rowIndex">{{:rowIndex}}</span>
+        </div>
+        <div class="rowName">
+            <span><strong>Nome:</strong></span> <span>{{:Nome}}</span>
+            {{if NomeSocial}}
+            <strong><span> ({{:NomeSocial}})</span></strong>
+            {{/if}}
+        </div>
+        <div class="rowTipoInsc">
+            <span><strong>Tipo:</strong></span><br />
+            <span>{{:TipoInscOab}}</span>
+        </div>
+        <div class="rowInsc">
+            <span><strong>Inscrição:</strong></span><br />
+            <span>{{:Inscricao}}</span>
+        </div>
+        <div class="rowUf">
+            <span><strong>UF:</strong></span><br />
+            <span>{{:UF}}</span>
+        </div>
+        <input type="hidden" name="hdLink" value="{{:DetailUrl}}" />
+        <input type="hidden" name="hdMail" value="{{:Mail}}" />
+    </div>
+</script>
+
+<script type="text/x-jsrender" id="tmplDetail">
+    <div class="modal hide fade">
+        <div class="modal-body">
+            <button type="button" class="close">&times;</button>
+            <ul class="nav nav-tabs" id="tabs" data-tabs="tabs">
+                <li class="active"><a href="#info" data-toggle="tab">Ficha</a></li>
+                <li><a href="#soci" data-toggle="tab">Sociedade</a></li>
+                
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="info">
+                    <div id="divImgDetail" style="text-align: center">
+                        <img id="imgDetail" src="{{:DetailUrl}}" />
+                        <div id="textInfo">
+                            *O teor desta consulta do <a href="http://cna.oab.org.br">cna.oab.org.br</a><a>
+                                efetuada em 08/09/2025 é meramente informativo, não valendo como certidão.
+                            </a>
+                        </div>
+                    </div>
+                    <a title="Imprimir" id="imgPrint">Imprimir</a>
+                </div>
+                <div class="tab-pane" id="soci">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Inscrição</th>
+                                <th>Nome</th>
+                                <th style="text-align: center">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-jsrender" id="tpmlSociContent">
+    {{for Sociedades}}
+    <tr class="trSoci" onclick="window.open('{{:Url}}')">
+        <td><span class="badge badge-inverse">{{:#index + 1}}</span></td>
+        <td>{{:Insc}}</td>
+        <td>{{:NomeSoci}}</td>
+        <td style="text-align: center">{{:SiglUf}}</td>
+    </tr>
+    {{/for}}
+</script>
+
+
+
+
+<script type="text/javascript">
+    var TOKENHEADERVALUE = '5hFrRZKvz4APiZ53ksEY4_OszjqdWyGM8_isMCeEkugbixcHGMnExMCxHhVEYETfvHIpj2RoUKhYRiiB6ReWLU6srGI_GRUl7_NuZslwJSk1:BiMGdGWudZEJb99SHOcxO8cSNdGdY3Co5_-uqZ9Lix2BzOlhdndtVDdvM1f3L-JjaO_r_y2rMF5EESSPZAYgtVXkszHs5lFi9av9jlfnw5M1';
+</script>
+    </div>
+    <div id="footer">
+        <div id="footerContent">
+            <div id="fCol1">
+                <h4>
+                    + NA WEB
+                </h4>
+                <ul>
+                    <li>
+                        <a href="https://www.oab.org.br/museuOAB/default.asp" target="museuhistoricooab">
+                            Museu Histórico da OAB
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.oab.org.br/ARI/default.asp" target="relacoesinternacionais">
+                            Relações Internacionais
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.oab.org.br/centrocultural/default.asp" target="centrocultural">
+                            Centro Cultural
+                        </a>
+                    </li>
+                    <li><a href="https://www.oab.org.br/eventosoab" target="eventos">Eventos</a></li>
+                    <li><a href="https://www.oab.org.br/noticias" target="oabeditora">Notícias</a></li>
+                </ul>
+            </div>
+            <div id="fCol2">
+                <h4>
+                    AS SECCIONAIS
+                </h4>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabac.org.br" target="oabac">AC</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oab-al.org.br" target="oabac">AL</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabam.org.br" target="oabac">AM</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabap.org.br" target="oabac">AP</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oab-ba.org.br" target="oabac">BA</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabce.org.br" target="oabac">CE</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabdf.org.br" target="oabac">DF</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabes.org.br" target="oabac">ES</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabgo.org.br" target="oabac">GO</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabma.org.br" target="oabac">MA</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabmg.org.br" target="oabac">MG</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oab-ms.org.br" target="oabac">MS</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabmt.org.br" target="oabac">MT</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabpa.org.br" target="oabac">PA</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabpb.org.br" target="oabac">PB</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabpe.org.br" target="oabac">PE</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabpi.org.br" target="oabac">PI</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="https://www.oabpr.org.br/" target="oabac">PR</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oab-rj.org.br" target="oabac">RJ</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oab-rn.org.br" target="oabac">RN</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oab-ro.org.br" target="oabac">RO</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabrr.org.br" target="oabac">RR</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabrs.org.br" target="oabac">RS</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oab-sc.org.br/" target="oabac">SC</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabsergipe.com.br" target="oabac">SE</a>
+                </div>
+                <div class="seccionalfooterUF">
+                    <a href="http://www.oabsp.org.br" target="oabac">SP</a>
+                </div>
+                <div class="seccionalfooterUF" style="margin-right: 0px;">
+                    <a href="http://www.oabto.org.br/" target="oabac">TO</a>
+                </div>
+            </div>
+            <div id="fCol3">
+                <h4>
+                    SERVIÇOS
+                </h4>
+                <div id="oabServicos">
+                    <ul>
+                        <div id="oabServicoA">
+                            <li>
+                                <a href="https://www.acoab.com.br/">certificado digital</a>
+                            </li>
+                        </div>
+                        <div id="oabServicoC">
+                            <li>
+                                <a href="https://examedeordem.oab.org.br/">exame de ordem</a>
+                            </li>
+                        </div>
+                        <div id="oabServicoD">
+                            <li>
+                                <a href="https://www.oab.org.br/publicacoes/AbrirPDF?LivroId=0000002837">estatuto e legislação</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerInfo">
+        Conselho Federal da Ordem dos Advogados do Brasil<br />
+        SAUS Quadra 5 Lote 1 Bloco M - BRASÍLIA DF | CEP 70070-939<br />
+        Fone: (61) 2193-9600<br />
+    </div>
+    <script src="/Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/Scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jnotify/jnotify.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.helper.js" type="text/javascript"></script>
+    <script src="/node_modules/jsrender/jsrender.min.js"></script>
+    <script type="text/javascript">
+        imgLoadingUrl = '/Content/Images/loader.gif';
+    </script>
+    
+    <script src="/Scripts/jQuery.print.js"></script>
+    <script src="/Scripts/printThis.js"></script>
+    <script src="/ViewScripts/Home/Index.js?v=3bb05174f4c1c8a0ac511b7348f8b93c" type="text/javascript"></script>
+
+    <script src="https://www.recaptcha.net/recaptcha/api.js?hl=pt-BR" async defer></script>
+    <script type="text/javascript">
+        var captchaCallback = function (response) {
+            captchaClick = true;
+            methods.find();
+        };
+
+        actionUrl = '/';
+        actionSendMail = '/Home/SendMail';
+
+    </script>
+
+    <script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-442219-3");
+            pageTracker._trackPageview();
+        } catch (err) { }
+    </script>
+</body>
+</html>

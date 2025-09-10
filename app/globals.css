@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Freelaw Brand Colors */
+    --freelaw-purple: #5527AD;
+    --freelaw-purple-light: #A994E6;
+    --freelaw-blue-dark: #241054;
+    --freelaw-blue: #2B265C;
+    --freelaw-pink: #DD2869;
+    --freelaw-pink-dark: #AF115E;
+    --freelaw-gold: #ECB43D;
+    --freelaw-gold-dark: #BC801F;
+    --freelaw-white: #EDF0F7;
+    --freelaw-black: #0C0C0C;
+
+    /* System Colors mapped to Freelaw */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+    --primary: 263 67% 42%; /* Freelaw Purple */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 253 40% 20%; /* Freelaw Blue Dark */
+    --secondary-foreground: 231 23% 94%;
+    --muted: 222 40% 96%; /* Freelaw White tint */
+    --muted-foreground: 252 30% 35%;
+    --accent: 43 80% 58%; /* Freelaw Gold */
+    --accent-foreground: 0 0% 5%;
+    --destructive: 338 64% 52%; /* Freelaw Pink */
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 263 67% 42%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 231 23% 94%;
+    --card: 0 0% 8%;
+    --card-foreground: 231 23% 94%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 231 23% 94%;
+    --primary: 263 67% 50%; /* Freelaw Purple lighter for dark mode */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 253 40% 25%;
+    --secondary-foreground: 231 23% 94%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 64%;
+    --accent: 43 80% 65%;
+    --accent-foreground: 0 0% 5%;
+    --destructive: 338 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 263 67% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Font Face for Satoshi */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+:root {
+  --font-satoshi: 'Satoshi', 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-satoshi);
+}
+
+/* Freelaw Custom Utilities */
+@layer utilities {
+  .bg-freelaw-purple {
+    background-color: #5527AD;
+  }
+  .bg-freelaw-purple-light {
+    background-color: #A994E6;
+  }
+  .bg-freelaw-blue-dark {
+    background-color: #241054;
+  }
+  .bg-freelaw-blue {
+    background-color: #2B265C;
+  }
+  .bg-freelaw-pink {
+    background-color: #DD2869;
+  }
+  .bg-freelaw-pink-dark {
+    background-color: #AF115E;
+  }
+  .bg-freelaw-gold {
+    background-color: #ECB43D;
+  }
+  .bg-freelaw-gold-dark {
+    background-color: #BC801F;
+  }
+  .bg-freelaw-white {
+    background-color: #EDF0F7;
+  }
+  .bg-freelaw-black {
+    background-color: #0C0C0C;
+  }
+
+  .text-freelaw-purple {
+    color: #5527AD;
+  }
+  .text-freelaw-purple-light {
+    color: #A994E6;
+  }
+  .text-freelaw-blue-dark {
+    color: #241054;
+  }
+  .text-freelaw-blue {
+    color: #2B265C;
+  }
+  .text-freelaw-pink {
+    color: #DD2869;
+  }
+  .text-freelaw-pink-dark {
+    color: #AF115E;
+  }
+  .text-freelaw-gold {
+    color: #ECB43D;
+  }
+  .text-freelaw-gold-dark {
+    color: #BC801F;
+  }
+  .text-freelaw-white {
+    color: #EDF0F7;
+  }
+  .text-freelaw-black {
+    color: #0C0C0C;
+  }
+
+  .border-freelaw-purple {
+    border-color: #5527AD;
+  }
+  .border-freelaw-purple-light {
+    border-color: #A994E6;
+  }
+  .border-freelaw-blue-dark {
+    border-color: #241054;
+  }
+  .border-freelaw-pink {
+    border-color: #DD2869;
+  }
+  .border-freelaw-gold {
+    border-color: #ECB43D;
+  }
+
+  /* Gradients */
+  .gradient-freelaw {
+    background: linear-gradient(135deg, #5527AD 0%, #A994E6 100%);
+  }
+  .gradient-freelaw-dark {
+    background: linear-gradient(135deg, #241054 0%, #2B265C 100%);
+  }
+  .gradient-freelaw-accent {
+    background: linear-gradient(135deg, #DD2869 0%, #ECB43D 100%);
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EDF0F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5527AD;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A994E6;
+}

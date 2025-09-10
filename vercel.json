@@ -1,0 +1,68 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "devCommand": "npm run dev",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase_service_role_key",
+    "DATABASE_URL": "@database_url",
+    "DIRECT_DATABASE_URL": "@direct_database_url",
+    "OPENAI_API_KEY": "@openai_api_key",
+    "ANTHROPIC_API_KEY": "@anthropic_api_key",
+    "GEMINI_API_KEY": "@gemini_api_key",
+    "GROQ_API_KEY": "@groq_api_key",
+    "STRIPE_PUBLISHABLE_KEY": "@stripe_publishable_key",
+    "STRIPE_SECRET_KEY": "@stripe_secret_key",
+    "ESCAVADOR_API_TOKEN": "@escavador_api_token",
+    "ESCAVADOR_API_URL": "@escavador_api_url",
+    "USE_REAL_API": "@use_real_api",
+    "SOLUCIONARE_API_TOKEN": "@solucionare_api_token",
+    "SOLUCIONARE_RELATIONAL_NAME": "@solucionare_relational_name",
+    "SOLUCIONARE_PUBLICATIONS_OFFICE_ID": "@solucionare_publications_office_id",
+    "SOLUCIONARE_REGISTER_OFFICE": "@solucionare_register_office",
+    "SOLUCIONARE_ANDAMENTOS_URL_TEMPLATE": "@solucionare_andamentos_url_template",
+    "SOLUCIONARE_ANDAMENTOS_ENABLED": "@solucionare_andamentos_enabled",
+    "SOLUCIONARE_ANDAMENTOS_CONCURRENCY": "@solucionare_andamentos_concurrency",
+    "SOLUCIONARE_ANDAMENTOS_TTL": "@solucionare_andamentos_ttl",
+    "SOLUCIONARE_DISCOVERY_BASE_URL": "@solucionare_discovery_base_url",
+    "SOLUCIONARE_DISCOVERY_REGISTER_PATH": "@solucionare_discovery_register_path",
+    "SOLUCIONARE_DISCOVERY_RESULTS_PATH": "@solucionare_discovery_results_path",
+    "SOLUCIONARE_DISCOVERY_DOCS_PATH": "@solucionare_discovery_docs_path"
+  },
+  "functions": {
+    "app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/portal-prestador/(.*)",
+      "destination": "/portal-prestador/$1"
+    }
+  ]
+}
+
+
+
